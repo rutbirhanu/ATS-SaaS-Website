@@ -1,5 +1,6 @@
 import { Header } from '@/components/layout/Header';
 import Aurora from '../../reactbits/Aurora/Aurora';
+import { DashboardDisplay } from '@/components/ui/DashboardDisplay';
 
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
 
       <Header />
 
-      <div className="flex flex-col items-center justify-center h-[calc(90vh-80px)]">
+      <div className="flex flex-col items-center justify-end h-[calc(72vh-80px)]">
 
         <div className="text-center">
           <h1 className="text-5xl mb-5">The Only ATS Website You Need</h1>
@@ -31,15 +32,17 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='mx-10 bg-yellow-50 rounded-2xl h-60'>
-      </div>
+      <DashboardDisplay />
       <div className='flex'>
-        <div className='ml-10 w-1/2 bg-green-100 rounded-2xl h-60'>
+        <div className='ml-10 w-1/2 border-2 border-green-300 rounded-2xl drop-shadow-2xl drop-shadow-green-300 h-60'>
           hi
         </div>
-        <div className='mr-10 w-1/2 bg-purple-200 rounded-2xl h-60'>
+        <div className='mr-10 w-1/2 border-2 border-purple-400 rounded-2xl h-60'>
           hi
         </div>
+        {/* <div className='mr-10 w-1/2 border-2 border-blue-950 rounded-2xl h-60'>
+          hi
+        </div> */}
       </div>
 
     </div>

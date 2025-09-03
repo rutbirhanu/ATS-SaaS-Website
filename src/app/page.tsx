@@ -1,9 +1,30 @@
 import { Header } from '@/components/layout/Header';
+// import { FaUpload, FaRobot, FaStar, FaQuestionCircle } from "react-icons/fa";
 import Aurora from '../../reactbits/Aurora/Aurora';
 import { DashboardDisplay } from '@/components/ui/DashboardDisplay';
+import { PricingCard } from '@/components/layout/PricingCard';
 
 
 export default function Home() {
+  const steps = [
+    {
+      title: "Upload Resume",
+      // icon: <FaUpload className="text-3xl text-cyan-400" />,
+    },
+    {
+      title: "AI Analysis",
+      // icon: <FaRobot className="text-3xl text-purple-400" />,
+    },
+    {
+      title: "Get Ranked & Matched",
+      // icon: <FaStar className="text-3xl text-yellow-400" />,
+    },
+    {
+      title: "Generate Interview Questions",
+      // icon: <FaQuestionCircle className="text-3xl text-pink-400" />,
+    },
+  ];
+
   return (
     <div className="relative w-full h-screen ">
       <div className="absolute inset-0 -z-10">
@@ -33,7 +54,7 @@ export default function Home() {
       </div>
 
       <DashboardDisplay />
-      <div className='flex'>
+      <div className='flex mt-10'>
         <div className='ml-10 w-1/2 border-2 border-green-300 rounded-2xl drop-shadow-2xl drop-shadow-green-300 h-60'>
           hi
         </div>
@@ -44,7 +65,28 @@ export default function Home() {
           hi
         </div> */}
       </div>
+      <h2 className="text-2xl font-bold mb-12 text-center mt-10">
+        How <span className="text-cyan-400">It Works</span>
+      </h2>
+      <div className='flex justify-center items-start my-6'>
 
+        <div className="flex flex-col items-start space-y-8 relative text-white">
+          <div className="absolute left-[9px] top-0 bottom-[-14px] w-0.5 bg-gradient-to-b from-purple-500 to-blue-500"></div>
+
+          {steps.map((step, index) => (
+            <div key={index} className="flex items-center space-x-4">
+              <div className="relative z-10 w-5 h-5 rounded-full bg-white border-2 border-purple-500 flex items-center justify-center">
+                <span className="text-sm font-semibold text-purple-600">
+                  {index + 1}
+                </span>
+              </div>
+              <p className="text-sm">{step.title}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <PricingCard />
     </div>
 
   );

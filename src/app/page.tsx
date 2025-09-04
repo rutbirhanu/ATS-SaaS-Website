@@ -56,17 +56,7 @@ export default function Home() {
       </div>
 
       <DashboardDisplay />
-      <div className='flex mt-10'>
-        <div className='ml-10 w-1/2 border-2 border-green-300 rounded-2xl drop-shadow-2xl drop-shadow-green-300 h-60'>
-          hi
-        </div>
-        <div className='mr-10 w-1/2 border-2 border-purple-400 rounded-2xl h-60'>
-          hi
-        </div>
-        {/* <div className='mr-10 w-1/2 border-2 border-blue-950 rounded-2xl h-60'>
-          hi
-        </div> */}
-      </div>
+     
       <h2 className="text-2xl font-bold mb-12 text-center mt-10">
         How <span className="text-cyan-400">It Works</span>
       </h2>

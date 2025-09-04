@@ -7,7 +7,7 @@ export const PricingCard = () => {
                 <p>u also want meapply this as a global background layout</p>
             </div>
 
-            <div className="flex mt-10 items-end justify-center gap-10 sm:flex-col sm:justify-center">
+            <div className="flex mt-10 flex-col items-center justify-center gap-10 lg:flex-row lg:items-end">
                 <div className="p-6 rounded-2xl border shadow-[0_2px_10px_#EAEAEA] bg-white/95 text-black">
                     <h3 className="text-[16px] text-black/70 font-bold">Popular</h3>
                     <div>

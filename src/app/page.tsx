@@ -3,6 +3,8 @@ import { Header } from '@/components/layout/Header';
 import Aurora from '../../reactbits/Aurora/Aurora';
 import { DashboardDisplay } from '@/components/ui/DashboardDisplay';
 import { PricingCard } from '@/components/layout/PricingCard';
+import { Footer } from '@/components/layout/Footer';
+import { FeaturesCard } from '@/components/layout/FeaturesCard';
 
 
 export default function Home() {
@@ -85,8 +87,9 @@ export default function Home() {
           ))}
         </div>
       </div>
-
+      <FeaturesCard />
       <PricingCard />
+      <Footer />
     </div>
 
   );

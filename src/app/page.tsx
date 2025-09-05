@@ -5,6 +5,7 @@ import { DashboardDisplay } from '@/components/ui/DashboardDisplay';
 import { PricingCard } from '@/components/layout/PricingCard';
 import { Footer } from '@/components/layout/Footer';
 import { FeaturesCard } from '@/components/layout/FeaturesCard';
+import { AboutSection } from '@/components/layout/AboutSection';
 
 
 export default function Home() {
@@ -44,7 +45,9 @@ export default function Home() {
       <div className="flex flex-col items-center justify-end h-[calc(72vh-80px)]">
 
         <div className="text-center">
-          <h1 className="text-5xl mb-5">The Only ATS Website You Need</h1>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+            The Future of Hiring is Here 🚀
+          </h2>
           <div className="px-3">
             <p className="text-sm">
               Do you also want me to show you how to apply this as a global background layout
@@ -56,7 +59,7 @@ export default function Home() {
       </div>
 
       <DashboardDisplay />
-     
+
       <h2 className="text-2xl font-bold mb-12 text-center mt-10">
         How <span className="text-cyan-400">It Works</span>
       </h2>
@@ -77,10 +80,12 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <AboutSection />
       <FeaturesCard />
       <PricingCard />
       <Footer />
-    </div>
+    </div >
 
   );
 }

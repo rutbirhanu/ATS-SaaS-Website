@@ -16,22 +16,22 @@ export default function Home() {
     },
     {
       title: "AI Scans & Matches",
-      description:'Our algorithms parse resumes, job descriptions, and skills to instantly generate top candidate/job matches.'
+      description: 'Our algorithms parse resumes, job descriptions, and skills to instantly generate top candidate/job matches.'
       // icon: <FaRobot className="text-3xl text-purple-400" />,
     },
     {
       title: "Ranked Results in Seconds",
-      description:"No endless scrolling: both recruiters and job seekers see AI-prioritized results."
+      description: "No endless scrolling: both recruiters and job seekers see AI-prioritized results."
       // icon: <FaStar className="text-3xl text-yellow-400" />,
     },
     {
       title: "Smart Notifications",
-      description:"Get alerts when a candidate or job perfectly matches."
+      description: "Get alerts when a candidate or job perfectly matches."
       // icon: <FaQuestionCircle className="text-3xl text-pink-400" />,
     },
     {
       title: "Track & Collaborate",
-      description:"Recruiters manage pipelines with teammates, while job seekers track applications in real time."
+      description: "Recruiters manage pipelines with teammates, while job seekers track applications in real time."
       // icon: <FaQuestionCircle className="text-3xl text-pink-400" />,
     },
   ];
@@ -50,26 +50,26 @@ export default function Home() {
 
       <Header />
 
-    <div className="flex flex-col items-center justify-center md:justify-center md:h-[calc(80vh-80px)] px-4">
-  <div className="text-center">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-      The Future of Hiring is Here 🚀
-    </h2>
-    <div className="px-2 sm:px-6">
-      <p className="text-sm sm:text-base mb-2">
-        Our AI-driven ATS helps recruiters find the right candidates in minutes, and job seekers land their dream roles with optimized applications.
-      </p>
-      <p className="text-sm sm:text-base">
-        Transform your hiring with explainable AI that reduces bias, accelerates decisions, and integrates seamlessly with your existing workflow.
-      </p>
-    </div>
-    <div>
-      <button className="bg-black rounded-xl px-6 py-3 mt-8 text-white hover:bg-gray-900 transition">
-        Get Started
-      </button>
-    </div>
-  </div>
-</div>
+      <div className="flex flex-col items-end justify-end md:justify-center md:h-[calc(80vh-80px)] px-4">
+        <div className="text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+            The Future of Hiring is Here 🚀
+          </h2>
+          <div className="px-2 sm:px-6">
+            <p className="text-sm sm:text-base mb-2">
+              Our AI-driven ATS helps recruiters find the right candidates in minutes, and job seekers land their dream roles with optimized applications.
+            </p>
+            <p className="text-sm sm:text-base">
+              Transform your hiring with explainable AI that reduces bias, accelerates decisions, and integrates seamlessly with your existing workflow.
+            </p>
+          </div>
+          <div>
+            <button className="bg-black rounded-xl px-6 py-3 mt-8 text-white hover:bg-gray-900 transition">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
 
       <DashboardDisplay />
       <AboutSection />

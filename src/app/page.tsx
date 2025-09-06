@@ -59,29 +59,38 @@ export default function Home() {
       </div>
 
       <DashboardDisplay />
+      <AboutSection />
 
-      <h2 className="text-2xl font-bold mb-12 text-center mt-10">
+
+      <h2 className="text-3xl font-bold mb-12 text-center mt-10 text-white">
         How <span className="text-cyan-400">It Works</span>
       </h2>
-      <div className='flex justify-center items-start my-6'>
 
-        <div className="flex flex-col items-start space-y-8 relative text-white">
-          <div className="absolute left-[9px] top-0 bottom-[-14px] w-0.5 bg-gradient-to-b from-purple-500 to-blue-500"></div>
+      <div className="max-w-3xl mx-auto relative">
+        <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 via-blue-500 to-cyan-400"></div>
 
+        <div className="space-y-1">
           {steps.map((step, index) => (
-            <div key={index} className="flex items-center space-x-4">
-              <div className="relative z-10 w-5 h-5 rounded-full bg-white border-2 border-purple-500 flex items-center justify-center">
-                <span className="text-sm font-semibold text-purple-600">
-                  {index + 1}
-                </span>
+            <div
+              key={index}
+              className={`flex items-center w-full ${index % 2 === 0 ? "justify-start" : "justify-end"
+                }`}
+            >
+              <div className="w-6/12 p-4 rounded-xl bg-[#111] border border-gray-800 shadow-lg hover:shadow-cyan-500/20 transition">
+                <h3 className="text-lg font-semibold text-cyan-400 mb-2">
+                  Step {index + 1}
+                </h3>
+                <p className="text-sm text-gray-300 leading-relaxed">{step.title}</p>
               </div>
-              <p className="text-sm">{step.title}</p>
             </div>
           ))}
         </div>
       </div>
 
-      <AboutSection />
+
+
+
+
       <FeaturesCard />
       <PricingCard />
       <Footer />

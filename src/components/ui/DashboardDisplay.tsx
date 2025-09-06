@@ -6,7 +6,7 @@ import dashboard_4 from "../../../public/dashboard_4.png"
 
 export const DashboardDisplay = () => {
     return (
-        <div className='relative mx-10 rounded-2xl my-20 text-black'>
+        <div className='relative mx-10 rounded-2xl mt-20 mb-16 text-black'>
             <div className="absolute inset-0 top-5 bottom-9 border-2 border-white rounded-2xl" />
 
             <div className="relative flex p-2 gap-5 items-start justify-center">

@@ -13,7 +13,7 @@ export const Footer = () => {
                     <p className="text-sm">job seeker part and the second to be explaining both common part i want smaller card in the middle like intersecting part i want the desing to be modern and eye catching</p>
                 </div>
             </div>
-            <div className="pt-30 pb-10 px-15 bg-blue-950 border border-green-900 drop-shadow-green-600 shadow-lg rounded-md">
+            <div className="pt-30 pb-10 px-15 bg-blue-900/30 border border-green-900 drop-shadow-green-600 shadow-lg rounded-md">
                 <div className="flex justify-between items-center py-5 gap-30">
                     <p>job seeker part and the second to be explaining both common part i want smaller card in the middle like </p>
                     <div className="flex items-center w-1/3 rounded-3xl border-none bg-white/30">

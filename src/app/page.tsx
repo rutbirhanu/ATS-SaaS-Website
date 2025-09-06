@@ -11,19 +11,27 @@ import { AboutSection } from '@/components/layout/AboutSection';
 export default function Home() {
   const steps = [
     {
-      title: "Upload Resume",
+      title: "Sign Up",
       // icon: <FaUpload className="text-3xl text-cyan-400" />,
     },
     {
-      title: "AI Analysis",
+      title: "AI Scans & Matches",
+      description:'Our algorithms parse resumes, job descriptions, and skills to instantly generate top candidate/job matches.'
       // icon: <FaRobot className="text-3xl text-purple-400" />,
     },
     {
-      title: "Get Ranked & Matched",
+      title: "Ranked Results in Seconds",
+      description:"No endless scrolling: both recruiters and job seekers see AI-prioritized results."
       // icon: <FaStar className="text-3xl text-yellow-400" />,
     },
     {
-      title: "Generate Interview Questions",
+      title: "Smart Notifications",
+      description:"Get alerts when a candidate or job perfectly matches."
+      // icon: <FaQuestionCircle className="text-3xl text-pink-400" />,
+    },
+    {
+      title: "Track & Collaborate",
+      description:"Recruiters manage pipelines with teammates, while job seekers track applications in real time."
       // icon: <FaQuestionCircle className="text-3xl text-pink-400" />,
     },
   ];
@@ -42,21 +50,26 @@ export default function Home() {
 
       <Header />
 
-      <div className="flex flex-col items-center justify-end h-[calc(72vh-80px)]">
-
-        <div className="text-center">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-            The Future of Hiring is Here 🚀
-          </h2>
-          <div className="px-3">
-            <p className="text-sm">
-              Do you also want me to show you how to apply this as a global background layout
-            </p>
-            <p className="text-sm">(so it works across all pages) instead of just one page?</p>
-          </div>
-          <div><button className='bg-black rounded-xl px-6 py-3 mt-10'>Get Started</button></div>
-        </div>
-      </div>
+    <div className="flex flex-col items-center justify-center md:justify-center md:h-[calc(80vh-80px)] px-4">
+  <div className="text-center">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+      The Future of Hiring is Here 🚀
+    </h2>
+    <div className="px-2 sm:px-6">
+      <p className="text-sm sm:text-base mb-2">
+        Our AI-driven ATS helps recruiters find the right candidates in minutes, and job seekers land their dream roles with optimized applications.
+      </p>
+      <p className="text-sm sm:text-base">
+        Transform your hiring with explainable AI that reduces bias, accelerates decisions, and integrates seamlessly with your existing workflow.
+      </p>
+    </div>
+    <div>
+      <button className="bg-black rounded-xl px-6 py-3 mt-8 text-white hover:bg-gray-900 transition">
+        Get Started
+      </button>
+    </div>
+  </div>
+</div>
 
       <DashboardDisplay />
       <AboutSection />
@@ -77,10 +90,11 @@ export default function Home() {
                 }`}
             >
               <div className="w-6/12 p-4 rounded-xl bg-[#111] border border-gray-800 shadow-lg hover:shadow-cyan-500/20 transition">
-                <h3 className="text-lg font-semibold text-cyan-400 mb-2">
+                <h3 className="text-[16px] font-semibold text-cyan-400 mb-1">
                   Step {index + 1}
                 </h3>
-                <p className="text-sm text-gray-300 leading-relaxed">{step.title}</p>
+                <p className="text-[15px] text-gray-300 leading-relaxed underline decoration-cyan-400">{step.title}</p>
+                <p className="text-[13px] text-gray-300 leading-relaxed mt-2">{step.description}</p>
               </div>
             </div>
           ))}

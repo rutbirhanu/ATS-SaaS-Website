@@ -6,11 +6,9 @@ import dashboard_4 from "../../../public/dashboard_4.png"
 
 export const DashboardDisplay = () => {
   return (
-    <div className="relative mx-4 md:mx-10 rounded-2xl mt-20 mb-16 text-black">
-      {/* Border wrapper */}
+    <div className="relative mx-4 md:mx-10 rounded-2xl my-20 text-black lg:my-5">
       <div className="absolute inset-0 top-5 bottom-9 border-2 border-white rounded-2xl" />
 
-      {/* Images container */}
       <div
         className="
           relative p-2 gap-5 

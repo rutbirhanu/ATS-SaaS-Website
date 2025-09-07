@@ -1,18 +1,57 @@
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+import logo from "../../../public/transparent-logo.png";
+import { Span } from "next/dist/trace";
+// import { Menu, X } from "lucide-react";
+
 export const Header = () => {
-    return (
-        <div className="flex justify-center sticky">
-            <div className="bg-white rounded-xl my-4 pl-6 w-fit drop-shadow-xl drop-shadow-gray-600">
-                <div className="flex items-center ">
-                    <nav className="text-black flex justify-between gap-8 py-[6px] text-sm">
-                        <p>#</p>
-                        <a href="#">Home</a>
-                        <a href="#">Platform</a>
-                        <a href="#">About</a>
-                        <a href="#">Pricing</a>
-                    </nav>
-                    <button className="bg-black rounded-xl p-[6px] px-3 ml-10 text-sm">Get Started</button>
-                </div>
-            </div>
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <header className="sticky top-0 z-50 flex justify-center px-4">
+      <div className="bg-white rounded-xl my-4 max-w-6xl drop-shadow-xl">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center justify-center bg-black rounded-xl w-24 h-9 mr-20">
+            <Image src={logo} width={80} height={24} alt="logo" />
+          </div>
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex text-black items-center gap-8 text-sm font-bold">
+            <a href="#">About</a>
+            <a href="#">Flow</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+          </nav>
+
+          {/* Get Started Button */}
+          <button className="hidden md:block bg-black rounded-xl px-4 py-2 text-sm ml-20">
+            Get Started
+          </button>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden p-2 rounded-md hover:bg-gray-100"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <span className="text-black">X</span> : <span className="text-black">=</span>}
+          </button>
         </div>
-    )
-}
+
+        {/* Mobile Dropdown */}
+        {isOpen && (
+          <div className="md:hidden flex flex-col items-center gap-4 pb-4 text-black">
+            <a href="#">About</a>
+            <a href="#">Flow</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <button className="bg-black rounded-xl px-4 py-2 text-sm text-white">
+              Get Started
+            </button>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};

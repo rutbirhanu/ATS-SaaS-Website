@@ -3,6 +3,7 @@ import twitter from '../../../public/twitter.png'
 import linkedin from '../../../public/linkedin.png'
 import facebook from '../../../public/facebook.png'
 import github from "../../../public/github.png"
+import logo from "../../../public/transparent-logo.png"
 
 export const Footer = () => {
     return (
@@ -35,7 +36,7 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mt-10">
                     {/* Logo Section */}
                     <div className="text-center md:text-left">
-                        <h1 className="text-4xl font-bold text-green-600 mb-3">Logo</h1>
+                        <Image src={logo} width={150} alt="logo"/>
                         <p className="text-sm mb-1">AIATS – Streamlining hiring</p>
                         <p className="text-sm">Our mission: Making recruitment faster</p>
                     </div>

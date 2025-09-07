@@ -7,7 +7,6 @@ import { Footer } from '@/components/layout/Footer';
 import { FeaturesCard } from '@/components/layout/FeaturesCard';
 import { AboutSection } from '@/components/layout/AboutSection';
 
-
 export default function Home() {
   const steps = [
     {
@@ -50,23 +49,27 @@ export default function Home() {
 
       <Header />
 
-      <div className="flex flex-col items-end justify-end md:justify-center md:h-[calc(80vh-80px)] px-4">
+      <div className="flex flex-col items-center justify-end md:justify-center md:h-[calc(80vh-80px)] px-4">
         <div className="text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
             The Future of Hiring is Here 🚀
           </h2>
-          <div className="px-2 sm:px-6">
+          <div className="px-2 sm:px-6 lg:w-[60%] mx-auto">
             <p className="text-sm sm:text-base mb-2">
               Our AI-driven ATS helps recruiters find the right candidates in minutes, and job seekers land their dream roles with optimized applications.
-            </p>
-            <p className="text-sm sm:text-base">
               Transform your hiring with explainable AI that reduces bias, accelerates decisions, and integrates seamlessly with your existing workflow.
             </p>
+
           </div>
           <div>
-            <button className="bg-black rounded-xl px-6 py-3 mt-8 text-white hover:bg-gray-900 transition">
+            <button className="px-5 py-2 mt-8 rounded-xl text-white font-semibold 
+      bg-gradient-to-r from-cyan-800 to-purple-800 
+      border
+      shadow-[8px_8px_16px_#050505,-8px_-8px_16px_#151515] 
+      transition-all duration-300">
               Get Started
             </button>
+
           </div>
         </div>
       </div>
@@ -89,7 +92,7 @@ export default function Home() {
               className={`flex items-center w-full ${index % 2 === 0 ? "justify-start" : "justify-end"
                 }`}
             >
-              <div className="w-6/12 p-4 rounded-xl bg-[#111] border border-gray-800 shadow-lg hover:shadow-cyan-500/20 transition">
+              <div className="w-6/12 p-4 rounded-xl bg-[#222] border border-gray-800 shadow-lg hover:shadow-cyan-500/20 transition">
                 <h3 className="text-[16px] font-semibold text-cyan-400 mb-1">
                   Step {index + 1}
                 </h3>

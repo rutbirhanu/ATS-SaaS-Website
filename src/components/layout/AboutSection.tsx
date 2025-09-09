@@ -6,7 +6,7 @@ import star from "../../../public/star.png"
 
 export const AboutSection = () => {
   return (
-    <section className="relative w-11/12 sm:w-5/6 mx-auto py-16 px-4 sm:px-6 bg-gradient-to-b from-[#0a0a0a] to-[#111] text-gray-200">
+    <section className="relative w-11/12 mt-10 sm:w-5/6 mx-auto py-16 px-4 sm:px-6 bg-gradient-to-b from-[#0a0a0a] to-[#111] text-gray-200">
       {/* Floating Icons */}
       <Image
         src={star}

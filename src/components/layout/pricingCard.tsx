@@ -9,6 +9,7 @@ export const PricingCard = () => {
         "Post 1 Job",
         "Basic Resume Parsing",
         "Candidate Profile View (20 limit)",
+        "Job Seeker AI Resume Scan"
       ],
       buttonStyle: "bg-black text-white",
       cardStyle: "bg-white/95 text-black shadow-[0_2px_10px_#EAEAEA]",
@@ -19,10 +20,11 @@ export const PricingCard = () => {
       period: "/month",
       highlight: true,
       features: [
-        "2 GB Storage",
-        "Apply to Jobs",
-        "Generate Interview Questions",
-        "Post up to 10 Jobs",
+        "Post up to 20 Jobs",
+        "Unlimited Candidate Profile Views",
+        "AI Resume Ranking & Matching",
+        "Smart Candidate Notifications",
+        "Email + Chat Support"
       ],
       buttonStyle: "bg-white text-black",
       cardStyle:
@@ -34,11 +36,12 @@ export const PricingCard = () => {
       period: "/month",
       highlight: false,
       features: [
-        "10 GB Storage",
-        "Unlimited Job Posts",
-        "Advanced Resume Parsing",
-        "Generate Interview Questions",
-        "Priority Support",
+        "Unlimited Job Postings",
+        "AI Resume Ranking & Matching",
+        "Dedicated Recruiter AI Assistant",
+        "API & Integrations",
+        "Priority 24/7 Support",
+        "Deep Analytics Dashboard"
       ],
       buttonStyle: "bg-black text-white",
       cardStyle: "bg-white text-black shadow-[0_2px_10px_#EAEAEA]",

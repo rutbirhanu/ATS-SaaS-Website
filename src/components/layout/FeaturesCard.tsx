@@ -2,7 +2,7 @@ export const FeaturesCard = () => {
   return (
     <section>
       {/* Header Section */}
-      <div className="flex flex-col items-center mt-20 text-center px-4">
+      <div className="flex flex-col items-center mt-30 text-center px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-electricBlue mb-4">
           Built for Candidates and Employers
         </h2>

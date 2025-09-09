@@ -6,32 +6,29 @@ import { PricingCard } from '@/components/layout/PricingCard';
 import { Footer } from '@/components/layout/Footer';
 import { FeaturesCard } from '@/components/layout/FeaturesCard';
 import { AboutSection } from '@/components/layout/AboutSection';
+import { FaRegDotCircle } from 'react-icons/fa';
 
 export default function Home() {
   const steps = [
     {
       title: "Sign Up",
-      // icon: <FaUpload className="text-3xl text-cyan-400" />,
+      description:"Include the neccessary credientials depending on your role user / recruiter"
     },
     {
       title: "AI Scans & Matches",
       description: 'Our algorithms parse resumes, job descriptions, and skills to instantly generate top candidate/job matches.'
-      // icon: <FaRobot className="text-3xl text-purple-400" />,
     },
     {
       title: "Ranked Results in Seconds",
       description: "No endless scrolling: both recruiters and job seekers see AI-prioritized results."
-      // icon: <FaStar className="text-3xl text-yellow-400" />,
     },
     {
       title: "Smart Notifications",
       description: "Get alerts when a candidate or job perfectly matches."
-      // icon: <FaQuestionCircle className="text-3xl text-pink-400" />,
     },
     {
       title: "Track & Collaborate",
       description: "Recruiters manage pipelines with teammates, while job seekers track applications in real time."
-      // icon: <FaQuestionCircle className="text-3xl text-pink-400" />,
     },
   ];
 
@@ -46,12 +43,12 @@ export default function Home() {
         />
       </div>
       <div className="absolute inset-0 bg-black/40 -z-9" />
-
+        
       <Header />
 
       <div className="flex flex-col items-center justify-end md:justify-center md:h-[calc(80vh-80px)] px-4">
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-700 bg-clip-text text-transparent mb-4">
             The Future of Hiring is Here 🚀
           </h2>
           <div className="px-2 sm:px-6 lg:w-[60%] mx-auto">
@@ -78,8 +75,8 @@ export default function Home() {
       <AboutSection />
 
 
-      <h2 className="text-3xl font-bold mb-12 text-center mt-10 text-white">
-        How <span className="text-cyan-400">It Works</span>
+      <h2 className="text-3xl font-bold mb-12 text-center mt-20 text-white">
+        How <span className="text-blue-400">It Works</span>
       </h2>
 
       <div className="max-w-3xl mx-auto relative">
@@ -93,19 +90,21 @@ export default function Home() {
                 }`}
             >
               <div className="w-6/12 p-4 rounded-xl bg-[#222] border border-gray-800 shadow-lg hover:shadow-cyan-500/20 transition">
-                <h3 className="text-[16px] font-semibold text-cyan-400 mb-1">
+                <h3 className="text-[16px] font-semibold text-blue-400 mb-1">
                   Step {index + 1}
                 </h3>
-                <p className="text-[15px] text-gray-300 leading-relaxed underline decoration-cyan-400">{step.title}</p>
-                <p className="text-[13px] text-gray-300 leading-relaxed mt-2">{step.description}</p>
+                <p className="text-[15px] text-gray-300 leading-relaxed underline decoration-blue-400">{step.title}</p>
+                <div className='flex gap-5 items-center justify-between'>
+                  <span>
+                    <FaRegDotCircle size={10} />
+                  </span>
+                  <p className="text-[13px] text-gray-300 leading-relaxed mt-2">{step.description}</p>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-
-
-
 
 
       <FeaturesCard />

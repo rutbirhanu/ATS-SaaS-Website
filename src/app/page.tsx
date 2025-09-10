@@ -2,11 +2,11 @@ import { Header } from '@/components/layout/Header';
 // import { FaUpload, FaRobot, FaStar, FaQuestionCircle } from "react-icons/fa";
 import Aurora from '../../reactbits/Aurora/Aurora';
 import { DashboardDisplay } from '@/components/ui/DashboardDisplay';
-// import { PricingCard } from '@/components/layout/PricingCard';
 import { Footer } from '@/components/layout/Footer';
 import { FeaturesCard } from '@/components/layout/FeaturesCard';
 import { AboutSection } from '@/components/layout/AboutSection';
 import { FaRegDotCircle } from 'react-icons/fa';
+import { PricingCard } from '@/components/layout/PricingCard';
 
 export default function Home() {
   const steps = [
@@ -108,7 +108,7 @@ export default function Home() {
 
 
       <FeaturesCard />
-      {/* <PricingCard /> */}
+      <PricingCard/>
       <Footer />
     </div >
 

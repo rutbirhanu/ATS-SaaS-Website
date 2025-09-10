@@ -2,7 +2,7 @@ import { Header } from '@/components/layout/Header';
 // import { FaUpload, FaRobot, FaStar, FaQuestionCircle } from "react-icons/fa";
 import Aurora from '../../reactbits/Aurora/Aurora';
 import { DashboardDisplay } from '@/components/ui/DashboardDisplay';
-import { PricingCard } from '@/components/layout/PricingCard';
+// import { PricingCard } from '@/components/layout/PricingCard';
 import { Footer } from '@/components/layout/Footer';
 import { FeaturesCard } from '@/components/layout/FeaturesCard';
 import { AboutSection } from '@/components/layout/AboutSection';
@@ -108,7 +108,7 @@ export default function Home() {
 
 
       <FeaturesCard />
-      <PricingCard />
+      {/* <PricingCard /> */}
       <Footer />
     </div >
 

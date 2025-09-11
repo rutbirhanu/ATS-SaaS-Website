@@ -6,7 +6,7 @@ import { Footer } from '@/components/layout/Footer';
 import { FeaturesCard } from '@/components/layout/FeaturesCard';
 import { AboutSection } from '@/components/layout/AboutSection';
 import { FaRegDotCircle } from 'react-icons/fa';
-import { PricingCard } from '@/components/layout/PricingCard';
+import { PricingCard } from '@/components/ui/PricingCard';
 
 export default function Home() {
   const steps = [
@@ -105,7 +105,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-
 
       <FeaturesCard />
       <PricingCard/>
